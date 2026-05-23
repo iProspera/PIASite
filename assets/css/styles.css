@@ -103,7 +103,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 /* Phone */
 .p-nav-phone {
   display: none; align-items: center; gap: .4rem;
-  color: rgba(255,255,255,.85); font-size: .8125rem; font-weight: 500;
+  color: #fff; font-size: .8125rem; font-weight: 500;
   padding: .4rem .8rem; border: 1px solid rgba(255,255,255,.25);
   border-radius: 20px; transition: var(--transition); white-space: nowrap;
 }
