@@ -704,7 +704,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
    CTA SECTION
    ═══════════════════════════════════════════════════════════ */
 .p-cta-section {
-  background: var(--nav-bg); padding: 4rem 0;
+  background: var(--nav-bg); padding: 5rem 0 6rem;
 }
 .p-cta-content { text-align: center; color: #fff; }
 .p-cta-content h2 {
