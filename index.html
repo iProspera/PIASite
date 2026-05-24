@@ -317,27 +317,43 @@
       <h2><em>Current Issue of the Weekly Wire</em></h2>
       <p class="p-heading-sub">Stay informed with our weekly market commentary and economic insights.</p>
     </div>
-    <div style="text-align:center;max-width:600px;margin:0 auto">
-      <a href="https://img1.wsimg.com/blobby/go/304956cb-db7e-44e5-b8d2-0bd6d748aba7/Weekly%20Wire%205.18.26.pdf" target="_blank" rel="noopener noreferrer" class="p-btn-primary" style="margin-bottom:2rem;display:inline-block">
-        Download PDF — Weekly Wire 5.18.26
-      </a>
 
-      <h3 style="margin-top:2rem;margin-bottom:1rem;font-family:'Playfair Display',serif">Recently Published</h3>
-      <div style="display:flex;flex-direction:column;gap:.75rem;text-align:left">
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-alt);border-radius:6px">
-          <span>Weekly Wire 5.11.26</span>
-          <a href="https://img1.wsimg.com/blobby/go/304956cb-db7e-44e5-b8d2-0bd6d748aba7/downloads/b9bf3198-67dc-4f1b-8fdd-d9bbb3fc2e39/Weekly%20Wire%205.11.26.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.03em">Download</a>
+    <div class="ww-viewer-wrap">
+      <!-- PDF Viewer -->
+      <div id="ww-viewer">
+        <div id="ww-loading">
+          <div class="ww-spinner"></div>
+          Loading current issue…
         </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-alt);border-radius:6px">
-          <span>Weekly Wire 5.04.26</span>
-          <a href="https://img1.wsimg.com/blobby/go/304956cb-db7e-44e5-b8d2-0bd6d748aba7/downloads/e156b08c-1f3f-4418-98da-51c0885cf62b/Weekly%20Wire%205.04.26.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.03em">Download</a>
-        </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-alt);border-radius:6px">
-          <span>Weekly Wire 4.27.26</span>
-          <a href="https://img1.wsimg.com/blobby/go/304956cb-db7e-44e5-b8d2-0bd6d748aba7/downloads/57b2586c-44b1-4ba4-bc74-09dde18b2ff7/Weekly%20Wire%204.27.26.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.03em">Download</a>
-        </div>
+        <canvas id="ww-canvas"></canvas>
+      </div>
+
+      <!-- Page controls -->
+      <div id="ww-controls">
+        <button id="ww-prev" class="ww-page-btn" aria-label="Previous page">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <span class="ww-page-info">Page <span id="ww-page-num">1</span> of <span id="ww-page-count">–</span></span>
+        <button id="ww-next" class="ww-page-btn" aria-label="Next page">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Download current issue -->
+      <div class="ww-download-row">
+        <a id="ww-download" href="#" class="ww-download-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span id="ww-title">Download Current Issue</span>
+        </a>
+      </div>
+
+      <!-- Previous issues -->
+      <h3 style="text-align:center;margin-top:2rem;margin-bottom:.75rem;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:500;color:var(--text-secondary)">Previous Issues</h3>
+      <div id="ww-archive" class="ww-archive-row">
+        <!-- Populated by weekly-wire-viewer.js -->
       </div>
     </div>
+
   </div>
 </section>
 
@@ -399,5 +415,7 @@
 
 </div><!-- /.p-site -->
 <script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="assets/js/weekly-wire-viewer.js"></script>
 </body>
 </html>
