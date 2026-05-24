@@ -90,9 +90,12 @@
         a.href = BASE + issue.file;
         a.download = issue.file;
         a.className = 'ww-archive-btn';
+        a.style.cssText = 'display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#f5f5f0;border:1px solid #ddd;border-radius:8px;color:#2f3b2d;font-size:.9rem;font-weight:600;text-decoration:none;transition:all .2s;flex:1;justify-content:center;min-width:140px;';
         a.innerHTML =
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="#4a7c4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>' +
           '<span>' + issue.label + '</span>';
+        a.onmouseover = function() { a.style.background='#4a7c4a'; a.style.color='#fff'; a.style.borderColor='#4a7c4a'; a.querySelector('svg').setAttribute('stroke','#fff'); };
+        a.onmouseout = function() { a.style.background='#f5f5f0'; a.style.color='#2f3b2d'; a.style.borderColor='#ddd'; a.querySelector('svg').setAttribute('stroke','#4a7c4a'); };
         archiveRow.appendChild(a);
       });
 
