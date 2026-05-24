@@ -711,8 +711,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 600; margin-bottom: .75rem;
 }
-.p-cta-content p { opacity: .8; max-width: 600px; margin: 0 auto 1.5rem; }
-.p-cta-btns { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+.p-cta-content p { opacity: .8; max-width: 600px; margin: 0 auto 2rem; }
+.p-cta-btns { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; margin-bottom: 1rem; }
 .p-cta-section .p-btn-primary {
   background: #fff; color: var(--green-accent); border-color: #fff;
 }
@@ -780,7 +780,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   .p-hero { min-height: 320px; }
   .p-section { padding: 3rem 0; }
   .p-family-office { padding: 3rem 0; }
-  .p-cta-section { padding: 3rem 0; }
+  .p-cta-section { padding: 3rem 0 4rem; }
 }
 
 /* Standardized social icons */
