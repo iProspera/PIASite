@@ -961,6 +961,20 @@ header[data-ux], nav[data-ux] { display: none !important; }
 .p-hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
 .p-hero-img { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.12); order: -1; }
 .p-hero-img img { width: 100%; height: 280px; object-fit: cover; }
+
+/* Overlay hero — image blended into tan background */
+.p-hero-overlay {
+  position: relative;
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+  min-height: 340px; display: flex; align-items: center;
+}
+.p-hero-overlay::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(242,242,234,.82) 0%, rgba(234,234,224,.72) 100%);
+}
+.p-hero-overlay .p-container { position: relative; z-index: 1; }
+.p-hero-overlay .p-hero-eyebrow { color: var(--text-muted); }
+.p-hero-overlay h1 { color: var(--text-primary); max-width: 600px; }
 .p-btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--green); color: #fff;
