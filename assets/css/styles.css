@@ -222,10 +222,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   max-width: 680px; margin: 0 auto; line-height: 1.6;
 }
 
-.p-intro-text { max-width: 800px; margin: 0 auto; text-align: center; }
-.p-intro-text p { font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); text-align: center; }
+.p-intro-text { max-width: 800px; margin: 0 auto; text-align: justify; }
+.p-intro-text p { font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); text-align: justify; }
 
-.p-center-text { text-align: center; color: var(--text-secondary); line-height: 1.7; max-width: 800px; margin: 0 auto; }
+.p-center-text { text-align: justify; color: var(--text-secondary); line-height: 1.7; max-width: 800px; margin: 0 auto; }
 
 /* Content Grid (text + image) */
 .p-content-grid {
@@ -235,17 +235,17 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .p-content-reverse .p-content-img { order: -1; }
 @media (max-width: 767px) { .p-content-reverse .p-content-img { order: 0; } }
 
-.p-content-text { text-align: center; }
+.p-content-text { text-align: justify; }
 .p-content-text h2 {
   font-family: var(--serif); font-size: 1.65rem; font-weight: 600;
-  margin-bottom: 1rem; color: var(--text-primary); text-align: center;
+  margin-bottom: 1rem; color: var(--text-primary); text-align: center;  /* headings stay centered */
 }
 .p-content-text p {
-  color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: center;
+  color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: justify;
 }
 .p-content-img img { border-radius: var(--radius); box-shadow: var(--shadow-md); }
 
-.p-section p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: center; }
+.p-section p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: justify; }
 .p-section p:last-child { margin-bottom: 0; }
 
 
@@ -993,7 +993,7 @@ header[data-ux], nav[data-ux] { display: none !important; }
   font-family: var(--serif); font-size: 1.875rem; font-weight: 400;
   color: var(--text-primary); margin-bottom: 16px; letter-spacing: -.01em;
 }
-.p-section-heading p { font-size: 1.0625rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto; line-height: 1.7; }
+.p-section-heading p { font-size: 1.0625rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto; line-height: 1.7; text-align: justify; }
 @media (min-width: 768px) { .p-section-heading h2 { font-size: 2.375rem; } }
 
 /* ===== FAMILY OFFICE ===== */
