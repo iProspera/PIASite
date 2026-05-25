@@ -308,10 +308,11 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 @media (min-width: 640px) { .p-feature-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .p-feature-grid { grid-template-columns: repeat(4, 1fr); } }
-/* Employer Plans — 3+2 centered layout */
-.p-benefit-grid { justify-content: center; }
-@media (min-width: 640px) { .p-benefit-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 960px) { .p-benefit-grid { grid-template-columns: repeat(3, 1fr); } }
+/* Employer Plans — 3+2 centered layout (flexbox for centered last row) */
+.p-benefit-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.p-benefit-grid .p-feature-card { flex: 0 1 100%; }
+@media (min-width: 640px) { .p-benefit-grid .p-feature-card { flex: 0 1 calc(50% - 0.75rem); } }
+@media (min-width: 960px) { .p-benefit-grid .p-feature-card { flex: 0 1 calc(33.333% - 1rem); } }
 
 .p-feature-card {
   background: #fff; border: 1px solid var(--card-border);
