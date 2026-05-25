@@ -308,6 +308,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 @media (min-width: 640px) { .p-feature-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .p-feature-grid { grid-template-columns: repeat(4, 1fr); } }
+/* Employer Plans — 3+2 centered layout */
+.p-benefit-grid { justify-content: center; }
+@media (min-width: 640px) { .p-benefit-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .p-benefit-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .p-feature-card {
   background: #fff; border: 1px solid var(--card-border);
