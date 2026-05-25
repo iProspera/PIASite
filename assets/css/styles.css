@@ -506,6 +506,10 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .p-quick-link:hover { border-color: var(--green); background: rgba(74,124,74,.04); }
 .p-quick-link svg { flex-shrink: 0; color: var(--green); }
+/* Resource page — centered 3-col grid */
+.p-resource-grid { max-width: 900px; margin-left: auto; margin-right: auto; }
+@media (min-width: 640px) { .p-resource-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .p-resource-grid { grid-template-columns: repeat(3, 1fr); } }
 
 
 /* ═══════════════════════════════════════════════════════════
