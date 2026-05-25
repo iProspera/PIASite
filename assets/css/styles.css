@@ -981,7 +981,7 @@ header[data-ux], nav[data-ux] { display: none !important; }
 }
 @media (min-width: 1024px) {
   .p-hero-grid { grid-template-columns: 1fr 1fr; }
-  .p-hero-text { text-align: center; }
+  .p-hero-text { text-align: left; }
   .p-hero-img { order: 1; }
   .p-hero-img img { height: 400px; }
   .p-hero-sub { margin-left: 0; margin-right: 0; }
