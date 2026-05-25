@@ -156,7 +156,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 .p-hero-content {
   position: relative; z-index: 1;
-  padding: 4rem 0 3.5rem; color: #fff;
+  padding: 4rem 0 3.5rem; color: #fff; text-align: center;
 }
 .p-hero h1 {
   font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.25rem);
@@ -981,7 +981,7 @@ header[data-ux], nav[data-ux] { display: none !important; }
 }
 @media (min-width: 1024px) {
   .p-hero-grid { grid-template-columns: 1fr 1fr; }
-  .p-hero-text { text-align: left; }
+  .p-hero-text { text-align: center; }
   .p-hero-img { order: 1; }
   .p-hero-img img { height: 400px; }
   .p-hero-sub { margin-left: 0; margin-right: 0; }
