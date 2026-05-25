@@ -223,7 +223,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 
 .p-intro-text { max-width: 800px; margin: 0 auto; text-align: center; }
-.p-intro-text p { font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); }
+.p-intro-text p { font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); text-align: center; }
 
 .p-center-text { text-align: center; color: var(--text-secondary); line-height: 1.7; max-width: 800px; margin: 0 auto; }
 
@@ -235,16 +235,17 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .p-content-reverse .p-content-img { order: -1; }
 @media (max-width: 767px) { .p-content-reverse .p-content-img { order: 0; } }
 
+.p-content-text { text-align: center; }
 .p-content-text h2 {
   font-family: var(--serif); font-size: 1.65rem; font-weight: 600;
-  margin-bottom: 1rem; color: var(--text-primary);
+  margin-bottom: 1rem; color: var(--text-primary); text-align: center;
 }
 .p-content-text p {
-  color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;
+  color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: center;
 }
 .p-content-img img { border-radius: var(--radius); box-shadow: var(--shadow-md); }
 
-.p-section p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+.p-section p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; text-align: center; }
 .p-section p:last-child { margin-bottom: 0; }
 
 
