@@ -308,6 +308,8 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 }
 @media (min-width: 640px) { .p-feature-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .p-feature-grid { grid-template-columns: repeat(4, 1fr); } }
+/* About — full-width stacked cards */
+.p-about-cards { display: flex; flex-direction: column; gap: 1.25rem; max-width: 800px; margin-left: auto; margin-right: auto; margin-top: 2rem; }
 /* Employer Plans — 3+2 centered layout (flexbox for centered last row) */
 .p-benefit-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
 .p-benefit-grid .p-feature-card { flex: 0 1 100%; }
