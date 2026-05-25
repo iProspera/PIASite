@@ -382,6 +382,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem;
 }
 @media (min-width: 640px) { .p-benefits-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 640px) { .p-benefits-grid .p-benefit-item:first-child { grid-column: 1 / -1; } }
 .p-benefit-item {
   padding: 1rem 1.25rem; background: #fff;
   border-radius: var(--radius); border: 1px solid var(--card-border);
