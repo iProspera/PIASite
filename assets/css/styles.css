@@ -222,7 +222,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   max-width: 680px; margin: 0 auto; line-height: 1.6;
 }
 
-.p-intro-text { max-width: 800px; margin: 0 auto; }
+.p-intro-text { max-width: 800px; margin: 0 auto; text-align: center; }
 .p-intro-text p { font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); }
 
 .p-center-text { text-align: center; color: var(--text-secondary); line-height: 1.7; max-width: 800px; margin: 0 auto; }
