@@ -101,13 +101,13 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
 .p-nav-dropdown a.active { color: var(--nav-active); }
 
 /* Phone */
-.p-nav-phone {
+a.p-nav-phone {
   display: none; align-items: center; gap: .4rem;
   color: rgba(255,255,255,.8); font-size: .8125rem; font-weight: 500;
   padding: .5rem .65rem; border: none;
   border-radius: 6px; transition: var(--transition); white-space: nowrap;
 }
-.p-nav-phone:hover { color: #fff; background: rgba(255,255,255,.1); }
+a.p-nav-phone:hover { color: #fff; background: rgba(255,255,255,.1); }
 @media (min-width: 960px) { .p-nav-phone { display: inline-flex; } }
 
 /* Mobile toggle */
@@ -926,13 +926,13 @@ header[data-ux], nav[data-ux] { display: none !important; }
   color: rgba(255,255,255,.8); transition: all .15s;
 }
 .p-nav-dropdown a:hover { color: #fff; background: rgba(255,255,255,.1); }
-.p-nav-phone {
+a.p-nav-phone {
   display: none; align-items: center; gap: 8px;
   font-size: .875rem; font-weight: 500; letter-spacing: .03em;
   color: rgba(255,255,255,.9); transition: color .2s;
   border: none; padding: 0; border-radius: 0;
 }
-.p-nav-phone:hover { color: var(--nav-active); }
+a.p-nav-phone:hover { color: var(--nav-active); }
 .p-nav-phone svg { width: 16px; height: 16px; }
 .p-nav-toggle { display: block; color: #fff; padding: 8px; border-radius: 8px; transition: background .2s; }
 .p-nav-toggle:hover { background: rgba(255,255,255,.1); }
