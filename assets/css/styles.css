@@ -59,7 +59,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   display: flex; align-items: center; justify-content: space-between;
   height: 64px; gap: .5rem;
 }
-.p-nav-logo img { height: 60px; width: auto; }
+.p-nav-logo img { height: 68px; width: auto; }
 .p-nav-links {
   display: none; align-items: center; gap: 0;
 }
@@ -902,7 +902,7 @@ header[data-ux], nav[data-ux] { display: none !important; }
   display: flex; align-items: center; justify-content: space-between;
   height: 72px;
 }
-.p-nav-logo img { height: 60px; width: auto; object-fit: contain; }
+.p-nav-logo img { height: 68px; width: auto; object-fit: contain; }
 .p-nav-links { display: none; align-items: center; gap: 1.5rem; }
 .p-nav-links a, .p-nav-more-btn {
   font-size: .875rem; font-weight: 500; letter-spacing: .03em;
