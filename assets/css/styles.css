@@ -108,7 +108,7 @@ a.p-nav-phone {
   border-radius: 6px; transition: var(--transition); white-space: nowrap;
 }
 a.p-nav-phone:hover { color: #fff; background: rgba(255,255,255,.1); }
-@media (min-width: 960px) { .p-nav-phone { display: inline-flex; } }
+@media (min-width: 960px) { a.p-nav-phone { display: inline-flex; } }
 
 /* Mobile toggle */
 .p-nav-toggle {
@@ -952,7 +952,7 @@ a.p-nav-phone:hover { color: var(--nav-active); }
 .p-mobile-phone svg { width: 16px; height: 16px; }
 @media (min-width: 1024px) {
   .p-nav-links { display: flex; }
-  .p-nav-phone { display: flex; }
+  a.p-nav-phone { display: flex; }
   .p-nav-toggle { display: none; }
 }
 
