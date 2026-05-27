@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const banner = document.createElement('div');
     banner.id = 'cookieBanner';
     banner.innerHTML = `
-      <div style="position:fixed;bottom:0;left:0;right:0;z-index:200;background:#2f3b2d;color:rgba(255,255,255,.9);padding:1rem 1.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem;font-size:.85rem;box-shadow:0 -2px 12px rgba(0,0,0,.2)">
+      <div style="position:fixed;bottom:0;left:0;right:0;z-index:2147483647;background:#2f3b2d;color:rgba(255,255,255,.9);padding:1rem 4.5rem 1rem 1.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem;font-size:.85rem;box-shadow:0 -2px 12px rgba(0,0,0,.2)">
         <p style="margin:0;max-width:700px">We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</p>
         <div style="display:flex;gap:.5rem;flex-shrink:0">
           <button onclick="document.getElementById('cookieBanner').remove();localStorage.setItem('cookieConsent','declined')" style="padding:.5rem 1rem;border:1px solid rgba(255,255,255,.3);border-radius:6px;color:#fff;background:none;cursor:pointer;font-size:.8rem">Decline</button>
