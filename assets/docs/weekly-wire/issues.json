@@ -1,10 +1,15 @@
 {
   "current": {
-    "label": "Weekly Wire — May 18, 2026",
-    "file": "WeeklyWire_2026-05-18.pdf",
-    "date": "2026-05-18"
+    "label": "Weekly Wire — May 26, 2026",
+    "file": "WeeklyWire_2026-05-26.pdf",
+    "date": "2026-05-26"
   },
   "archive": [
+    {
+      "label": "May 18, 2026",
+      "file": "WeeklyWire_2026-05-18.pdf",
+      "date": "2026-05-18"
+    },
     {
       "label": "May 11, 2026",
       "file": "WeeklyWire_2026-05-11.pdf",
@@ -14,11 +19,6 @@
       "label": "May 4, 2026",
       "file": "WeeklyWire_2026-05-04.pdf",
       "date": "2026-05-04"
-    },
-    {
-      "label": "Apr 27, 2026",
-      "file": "WeeklyWire_2026-04-27.pdf",
-      "date": "2026-04-27"
     }
   ]
 }
